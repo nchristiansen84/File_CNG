@@ -6,6 +6,7 @@ Currently it has to be an absolute path, and future plans to allow relative path
 
 I still have testing to do with the initial program before I start added more stuff to it.
 
+<pre>
 File_CNG.exe usage:  
 	-e               Encrypt  
 	                   Must be used with -k and -p  
@@ -33,3 +34,4 @@ Examples:
     -> This will encrypt the files inside the directory specified and the files inside any of it's subdirectories  
   File_CNG.exe -d -k 12345678901234567890123456789012 -p E:\testDir -r  
     -> This will decrypt the files inside the directory specified and the files inside any of it's subdirectories  
+</pre>
