@@ -755,7 +755,7 @@ DWORD isValidKey(PCWCH Key)
 DWORD invalidArgPrint()
 {
 	printf("Invalid argument(s).\n");
-	printf("Use \"Crypto_CNG.exe [-h,-?,?]\" for usage information.\n");
+	printf("Use \"File_CNG.exe [-h,-?,?]\" for usage information.\n");
 	return ERROR_BAD_ARGUMENTS;
 }
 
@@ -775,7 +775,7 @@ DWORD helpPrint()
 	printf("  [CHAR] - Character\n");
 	printf("  [INT]  - Integer\n");
 	putchar('\n');
-	printf("Crypto_CNG.exe usage:\n");
+	printf("File_CNG.exe usage:\n");
 	printf("  -e               Encrypt\n");
 	printf("                     Must be used with -k and -p\n");
 	printf("                     Optionally used with -r\n");
@@ -783,7 +783,9 @@ DWORD helpPrint()
 	printf("                     Must be used with -k and -p\n");
 	printf("                     Optionally used with -r\n");
 	printf("  -k [STR]         Key used for transforming\n");
+	printf("                     Must be 32 characters\n");
 	printf("  -p [STR]         Path to file or directory to be transformed\n");
+	printf("                     Must be absolute path\n");
 	printf("  -r               Recursive\n");
 	printf("  -t               Test\n");
 	return ERROR_SUCCESS;
